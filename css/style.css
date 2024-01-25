@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  scroll-behavior: auto;
+}
+.nav {
+  font-size: 2rem;
+  transition: color 2s;
+}
+.nav a:hover {
+  color: #f902026b !important;
+}
+#open {
+  display: flex;
+  align-items: center;
+  color: #ebe0e0;
+  padding: 10px;
+}
+#open i {
+  background: linear-gradient(to top, #990012, #fcf6f6);
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+#open i:hover {
+  transform: translateX(3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#sideBar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 888;
+}
+#sideBar nav {
+  background-color: rgba(0, 0, 0, 0.728);
+}
+
+i.vertical-shake {
+  animation: vertical-shaking 1s infinite;
+}
+@keyframes vertical-shaking {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(5px) }
+  50% { transform: translateY(-5px) }
+  75% { transform: translateY(5px) }
+  100% { transform: translateY(0) }
+}
+
+
+
+#Home {
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.5)
+    url(../images/party-crowd-banner-design-vector.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.col-md-12 p {
+  margin: 0;
+  display: none;
+  border-bottom-right-radius:5px ;
+  border-bottom-left-radius:5px ;
+  background-color: #f8d7da;
+}
+.col-md-12 h3 {
+  border-top-right-radius:5px ;
+  border-top-left-radius:5px ;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+}
+#Details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.5) url(../images/wp2646807.webp) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.countdown-container span {
+  /* font: 800 40px Arial; */
+  font-size: 1.9rem;
+  color: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+.big-text {
+  font-size: 3.3rem;
+}
+.countdown-container > div {
+  margin: 0 2rem;
+  text-align: center;
+}
+
