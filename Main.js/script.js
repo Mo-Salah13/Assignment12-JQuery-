@@ -49,31 +49,9 @@ $(document).ready(function(){
     
 
     $(".Collapse-1").on("click" ,function () {
-        $(".content-1").slideToggle()
-        $(".content-2").slideUp()
-        $(".content-3").slideUp()
-        $(".content-4").slideUp()
+        $(this).next().slideToggle();
+        $('.col-md-12 p').not($(this).next()).slideUp()
     })
-    $(".Collapse-2").on("click" ,function () {
-        $(".content-2").slideToggle()
-        $(".content-1").slideUp()
-        $(".content-3").slideUp()
-        $(".content-4").slideUp()
-    })
-    $(".Collapse-3").on("click" ,function () {
-        $(".content-3").slideToggle()
-        $(".content-1").slideUp()
-        $(".content-2").slideUp()
-        $(".content-4").slideUp()
-    })
-    $(".Collapse-4").on("click" ,function () {
-        $(".content-4").slideToggle()
-        $(".content-1").slideUp()
-        $(".content-2").slideUp()
-        $(".content-3").slideUp()
-    })
-
-
 
 })
 
